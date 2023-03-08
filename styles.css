@@ -1,0 +1,12 @@
+.grid-container {
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);
+
+    aspect-ratio: 1 / 1;
+    width: 75%;
+    border: 1px solid red;
+}
+
+.grid-element {
+    border: 1px solid black;
+}
