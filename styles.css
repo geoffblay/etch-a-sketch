@@ -17,5 +17,5 @@
 }
 
 .grid-element {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
