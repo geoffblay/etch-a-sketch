@@ -1,7 +1,9 @@
 const grid = document.querySelector(".grid-container");
-
 const reload = document.querySelector("#reset-btn");
-reload.addEventListener('click', () => location.reload());
+
+reload.addEventListener('click', clearColor);
+
+document.addEventListener('DOMContentLoaded', fillGrid(16))
 
 function fillGrid(rows) {
     // Clear grid
@@ -20,6 +22,19 @@ function fillGrid(rows) {
         grid_element.setAttribute('class', 'grid-element');
         grid.appendChild(grid_element);
     }
+
+    // Add event listeners
+    let pixels = document.querySelectorAll('.grid-element');
+    pixels.forEach((pixel => {
+        pixel.addEventListener('mouseover', () => {
+            pixel.setAttribute('style', 'background-color: black');
+        })
+    }))
 }
 
-fillGrid(16);
+function clearColor() {
+    let pixels = document.querySelectorAll('.grid-element');
+    pixels.forEach((pixel) => {
+        pixel.setAttribute('style', 'background-color: white');
+    })
+}
