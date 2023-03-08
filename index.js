@@ -1,5 +1,8 @@
 const grid = document.querySelector(".grid-container");
 
+const reload = document.querySelector("#reset-btn");
+reload.addEventListener('click', () => location.reload());
+
 function fillGrid(rows) {
     // Clear grid
     let child = grid.lastElementChild;

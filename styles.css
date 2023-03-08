@@ -1,3 +1,12 @@
+.containers-div {
+    display: flex;
+}
+
+.buttons-container {
+    background-color: aqua;
+    width: 25%;
+}
+
 .grid-container {
     display: grid;  
     grid-template-columns: repeat(2, 1fr);
