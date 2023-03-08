@@ -4,10 +4,7 @@ const resize = document.querySelector("#resize-btn");
 
 reload.addEventListener('click', clearColor);
 resize.addEventListener('click', getNumRows);
-
 document.addEventListener('DOMContentLoaded', fillGrid(16))
-
-
 
 function fillGrid(rows) {
     // Clear grid
